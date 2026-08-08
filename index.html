@@ -932,6 +932,14 @@
       touch-action: pan-y;
     }
 
+    .render-case .case-compare {
+      aspect-ratio: 4 / 3;
+    }
+
+    .render-case .case-visual {
+      padding: 24px 28px;
+    }
+
     .case-compare img {
       position: absolute;
       inset: 0;
@@ -1767,11 +1775,143 @@
           </div>
         </article>
 
-        <div class="projects-label">Редизайн презентаций: до и после</div>
+        <div class="projects-label">AI-визуализация: до и после</div>
+
+        <article class="featured-case render-case portfolio-item reveal" data-category="photo">
+          <div class="featured-copy">
+            <div class="case-eyebrow"><span>02</span> AI-визуализация экстерьера</div>
+            <h3>Пустой участок <span>→ готовый ландшафт</span></h3>
+            <p class="case-description">Из исходного кадра с незавершённым участком сделал полноценную визуализацию благоустройства: сохранил архитектуру дома и ракурс, добавил озеленение, дорожки и посадки с естественным светом и тенями.</p>
+            <div class="case-points">
+              <div class="case-point"><i>✓</i><span>Сохранил геометрию дома, перспективу и исходную композицию</span></div>
+              <div class="case-point"><i>✓</i><span>Добавил газон, деревья, кустарники, цветники и дорожки</span></div>
+              <div class="case-point"><i>✓</i><span>Свёл растения с окружением по свету, масштабу и теням</span></div>
+            </div>
+            <div class="case-actions">
+              <a href="assets/render-house-before.webp" target="_blank" rel="noopener">Открыть «до» ↗</a>
+              <a href="assets/render-house-after.webp" target="_blank" rel="noopener">Открыть «после» ↗</a>
+            </div>
+          </div>
+          <div class="case-visual">
+            <div class="case-compare" id="houseRenderCompare" style="--position:52%">
+              <img src="assets/render-house-before.webp" alt="Загородный дом до AI-благоустройства" loading="lazy">
+              <img class="compare-after" src="assets/render-house-after.webp" alt="Загородный дом после AI-благоустройства" loading="lazy">
+              <div class="compare-shade"></div>
+              <span class="compare-label before">До</span>
+              <span class="compare-label after">После</span>
+              <div class="compare-divider"><span class="compare-handle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6-5 6 5 6M15 6l5 6-5 6"/></svg></span></div>
+              <span class="compare-caption">Потяни ползунок, чтобы сравнить</span>
+              <input class="compare-range" type="range" min="0" max="100" value="52" aria-label="Сравнение визуализации участка до и после">
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-case render-case portfolio-item reveal" data-category="photo" style="margin-top:24px">
+          <div class="featured-copy">
+            <div class="case-eyebrow"><span>03</span> AI-визуализация интерьера</div>
+            <h3>Без отделки <span>→ готовый интерьер</span></h3>
+            <p class="case-description">На основе пустой бетонной квартиры собрал фотореалистичную концепцию гостиной. Сохранил исходную геометрию помещения и вид из окна, а пространство превратил в законченный интерьер с мебелью, отделкой и светом.</p>
+            <div class="case-points">
+              <div class="case-point"><i>✓</i><span>Сохранил пропорции комнаты, окно, перспективу и точку съёмки</span></div>
+              <div class="case-point"><i>✓</i><span>Добавил отделку, мебель, текстиль и встроенное освещение</span></div>
+              <div class="case-point"><i>✓</i><span>Собрал спокойный современный интерьер с реалистичными материалами</span></div>
+            </div>
+            <div class="case-actions">
+              <a href="assets/render-interior-before.webp" target="_blank" rel="noopener">Открыть «до» ↗</a>
+              <a href="assets/render-interior-after.webp" target="_blank" rel="noopener">Открыть «после» ↗</a>
+            </div>
+          </div>
+          <div class="case-visual">
+            <div class="case-compare" id="interiorRenderCompare" style="--position:54%">
+              <img src="assets/render-interior-before.webp" alt="Квартира без отделки до AI-визуализации" loading="lazy">
+              <img class="compare-after" src="assets/render-interior-after.webp" alt="Готовая гостиная после AI-визуализации" loading="lazy">
+              <div class="compare-shade"></div>
+              <span class="compare-label before">До</span>
+              <span class="compare-label after">После</span>
+              <div class="compare-divider"><span class="compare-handle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6-5 6 5 6M15 6l5 6-5 6"/></svg></span></div>
+              <span class="compare-caption">Потяни ползунок, чтобы сравнить</span>
+              <input class="compare-range" type="range" min="0" max="100" value="54" aria-label="Сравнение интерьера до и после AI-визуализации">
+            </div>
+          </div>
+        </article>
+
+        </article>
+
+        <div class="projects-label">AI‑визуализация и рендеринг: до и после</div>
+
+        <article class="featured-case portfolio-item reveal" data-category="photo">
+          <div class="featured-copy">
+            <div class="case-eyebrow"><span>02</span> AI‑рендеринг / благоустройство</div>
+            <h3>Участок у <span>загородного дома</span></h3>
+            <p class="case-description">Показал, как из обычного исходника с пустым участком можно сделать привлекательную визуализацию благоустройства: добавил сад, цветники, живые текстуры и атмосферу ухоженного загородного пространства.</p>
+            <div class="case-points">
+              <div class="case-point"><i>✓</i><span>Сохранил архитектуру дома, ракурс и общую геометрию сцены</span></div>
+              <div class="case-point"><i>✓</i><span>Добавил озеленение, дорожки и детали, делающие участок живым</span></div>
+              <div class="case-point"><i>✓</i><span>Превратил сухой исходник в продающий визуальный рендер</span></div>
+            </div>
+            <div class="case-actions">
+              <a href="assets/render-house-before.webp" target="_blank" rel="noopener">Открыть «до» ↗</a>
+              <a href="assets/render-house-after.webp" target="_blank" rel="noopener">Открыть «после» ↗</a>
+            </div>
+          </div>
+
+          <div class="case-visual">
+            <div class="case-compare" id="renderHouseCompare" style="--position:56%">
+              <img src="assets/render-house-before.webp" alt="Исходный рендер загородного дома до благоустройства" loading="lazy">
+              <img class="compare-after" src="assets/render-house-after.webp" alt="Рендер загородного дома после AI-благоустройства" loading="lazy">
+              <div class="compare-shade"></div>
+              <span class="compare-label before">До</span>
+              <span class="compare-label after">После</span>
+              <div class="compare-divider">
+                <span class="compare-handle" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6-5 6 5 6M15 6l5 6-5 6"/></svg>
+                </span>
+              </div>
+              <span class="compare-caption">Потяни ползунок, чтобы сравнить</span>
+              <input class="compare-range" type="range" min="0" max="100" value="56" aria-label="Сравнение рендера дома до и после AI-благоустройства">
+            </div>
+          </div>
+        </article>
+
+        <article class="featured-case portfolio-item reveal" data-category="photo">
+          <div class="featured-copy">
+            <div class="case-eyebrow"><span>03</span> AI‑рендеринг / интерьер</div>
+            <h3>Квартира <span>без отделки</span></h3>
+            <p class="case-description">На базе бетонного исходника собрал атмосферную интерьерную визуализацию: сохранил планировку и панорамное окно, но превратил пустое помещение в современную гостиную с законченной отделкой и премиальным настроением.</p>
+            <div class="case-points">
+              <div class="case-point"><i>✓</i><span>Сохранил геометрию помещения и ключевой ракурс</span></div>
+              <div class="case-point"><i>✓</i><span>Добавил материалы, мебель, свет и цельную интерьерную атмосферу</span></div>
+              <div class="case-point"><i>✓</i><span>Показал переход от «бетона» к реалистичной визуализации для презентации проекта</span></div>
+            </div>
+            <div class="case-actions">
+              <a href="assets/render-interior-before.webp" target="_blank" rel="noopener">Открыть «до» ↗</a>
+              <a href="assets/render-interior-after.webp" target="_blank" rel="noopener">Открыть «после» ↗</a>
+            </div>
+          </div>
+
+          <div class="case-visual">
+            <div class="case-compare" id="renderInteriorCompare" style="--position:55%">
+              <img src="assets/render-interior-before.webp" alt="Исходный интерьер без отделки до AI-визуализации" loading="lazy">
+              <img class="compare-after" src="assets/render-interior-after.webp" alt="Интерьер после AI-визуализации" loading="lazy">
+              <div class="compare-shade"></div>
+              <span class="compare-label before">До</span>
+              <span class="compare-label after">После</span>
+              <div class="compare-divider">
+                <span class="compare-handle" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6-5 6 5 6M15 6l5 6-5 6"/></svg>
+                </span>
+              </div>
+              <span class="compare-caption">Потяни ползунок, чтобы сравнить</span>
+              <input class="compare-range" type="range" min="0" max="100" value="55" aria-label="Сравнение интерьера до и после AI-визуализации">
+            </div>
+          </div>
+        </article>
+
+                <div class="projects-label">Редизайн презентаций: до и после</div>
 
 <article class="featured-case portfolio-item reveal" data-category="presentation">
           <div class="featured-copy">
-            <div class="case-eyebrow"><span>02</span> Редизайн презентации</div>
+            <div class="case-eyebrow"><span>04</span> Редизайн презентации</div>
             <h3>Как перестать <span>убивать растения</span></h3>
             <p class="case-description">Исходная презентация была перегружена текстом, таблицами и случайной композицией. Я пересобрал материал в единую визуальную систему, сохранив содержание и усилив понятность каждого слайда.</p>
             <div class="case-points">
@@ -1888,7 +2028,7 @@
 
         <article class="featured-case office-case portfolio-item reveal" data-category="presentation">
           <div class="featured-copy">
-            <div class="case-eyebrow"><span>03</span> Коммерческая презентация</div>
+            <div class="case-eyebrow"><span>05</span> Коммерческая презентация</div>
             <h3>Баланс Проект <span>офисы для бизнеса</span></h3>
             <p class="case-description">Из тяжёлых текстовых слайдов и таблиц собрал коммерческую презентацию с сильным оффером, пакетами услуг, цифрами и контрастной визуальной системой.</p>
             <div class="case-points">
