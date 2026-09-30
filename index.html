@@ -1122,6 +1122,126 @@
       align-self: center;
     }
 
+    /* Portrait portfolio cards: keep the original artwork proportions. */
+    .portrait-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .portrait-work-card {
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(145deg, rgba(16,16,22,.98), rgba(8,8,12,.98));
+      transition: transform .38s var(--ease), border-color .38s ease, box-shadow .38s ease;
+    }
+
+    .portrait-work-card:hover {
+      transform: translateY(-7px);
+      border-color: rgba(160,89,255,.42);
+      box-shadow: 0 26px 60px rgba(0,0,0,.28);
+    }
+
+    .portrait-work-card .portrait-work-media {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #0a0a0e;
+    }
+
+    .portrait-work-card .portrait-work-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      opacity: 1;
+      transform: none;
+      transition: transform .5s var(--ease);
+    }
+
+    .portrait-work-card:hover .portrait-work-media img {
+      transform: scale(1.015);
+    }
+
+    .portrait-work-card .work-index {
+      top: 12px;
+      right: 12px;
+      background: rgba(8,8,11,.72);
+    }
+
+    .portrait-work-card .work-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 18px;
+      min-height: 0;
+    }
+
+    .portrait-work-card .work-meta h3 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.32;
+    }
+
+    .portrait-work-card .work-meta p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .portrait-work-card .tag {
+      justify-self: start;
+      white-space: nowrap;
+    }
+
+    /* The dress case uses vertical source images, so do not force them into 16:9. */
+    .photo-portrait-case {
+      grid-template-columns: minmax(330px, .9fr) minmax(420px, 1.1fr);
+      min-height: 660px;
+    }
+
+    .photo-portrait-case .case-visual {
+      justify-content: center;
+      padding: 28px 32px;
+    }
+
+    .portrait-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 700px;
+      align-items: start;
+    }
+
+    .portrait-shot {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 20px;
+      background: #050507;
+      box-shadow: 0 22px 56px rgba(0,0,0,.34);
+    }
+
+    .portrait-shot img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .portrait-shot .compare-label {
+      top: 12px;
+      left: 12px;
+      right: auto;
+    }
+
     .featured-case.office-case {
       --position: 58%;
       margin-top: 22px;
@@ -1455,7 +1575,9 @@
       .hero-art { min-height: 530px; }
       .laptop { width: 100%; right: -7%; }
       .services-grid, .works-grid { grid-template-columns: repeat(2, 1fr); }
+      .portrait-projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .featured-case { grid-template-columns: 1fr; }
+      .photo-portrait-case { grid-template-columns: 1fr; }
       .featured-copy { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.075); }
       .process-wrap { grid-template-columns: 1fr; }
       .process-list { grid-template-columns: repeat(4, 1fr); }
@@ -1545,7 +1667,10 @@
       .float-card.card-3, .float-card.card-4, .experience-ring { display: none; }
       .purple-light { width: 360px; right: -10px; }
       .services-grid, .works-grid { grid-template-columns: 1fr; }
+      .portrait-projects-grid { grid-template-columns: 1fr; }
       .featured-case { border-radius: 22px; }
+      .portrait-pair { gap: 10px; }
+      .portrait-shot { border-radius: 14px; }
       .featured-copy { padding: 28px 22px; }
       .featured-copy h3 { font-size: clamp(31px, 10vw, 44px); }
       .case-description { font-size: 13px; }
@@ -1946,6 +2071,16 @@
     html[data-theme="light"] .case-actions a { color: #4f4957; background: rgba(255,255,255,.62); }
     html[data-theme="light"] .case-actions a:hover { color: #201b26; }
     html[data-theme="light"] .projects-label { color: #77717f; }
+    html[data-theme="light"] .portrait-work-card {
+      background: rgba(255,255,255,.9);
+      border-color: rgba(44,38,60,.11);
+      box-shadow: 0 18px 45px rgba(79,65,119,.08);
+    }
+
+    html[data-theme="light"] .portrait-work-card .portrait-work-media {
+      background: #f2f0f7;
+    }
+
     html[data-theme="light"] .work-card,
     html[data-theme="light"] .work-card.real-case {
       background: linear-gradient(145deg, rgba(255,255,255,.97), rgba(245,243,248,.97));
@@ -2191,7 +2326,7 @@
           </div>
         </div>
 
-                <article class="featured-case portfolio-item reveal" data-category="photo">
+                <article class="featured-case photo-portrait-case portfolio-item reveal" data-category="photo">
           <div class="featured-copy">
             <div class="case-eyebrow"><span>01</span> Обработка фото / контент</div>
             <h3>Платье <span>без выкройки</span></h3>
@@ -2208,19 +2343,15 @@
           </div>
 
           <div class="case-visual">
-            <div class="case-compare" id="photoCompare" style="--position:57%">
-              <img src="assets/photo-before.webp" alt="Исходное фото до обработки" loading="lazy">
-              <img class="compare-after" src="assets/photo-after.webp" alt="Фото после обработки и оформления" loading="lazy">
-              <div class="compare-shade"></div>
-              <span class="compare-label before">До</span>
-              <span class="compare-label after">После</span>
-              <div class="compare-divider">
-                <span class="compare-handle" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 6-5 6 5 6M15 6l5 6-5 6"/></svg>
-                </span>
-              </div>
-              <span class="compare-caption">Потяни ползунок, чтобы сравнить</span>
-              <input class="compare-range" type="range" min="0" max="100" value="57" aria-label="Сравнение фото до и после обработки">
+            <div class="portrait-pair" aria-label="Сравнение фото до и после обработки">
+              <figure class="portrait-shot">
+                <img src="assets/photo-before.webp" alt="Исходное фото до обработки" loading="lazy">
+                <span class="compare-label before">До</span>
+              </figure>
+              <figure class="portrait-shot">
+                <img src="assets/photo-after.webp" alt="Фото после обработки и оформления" loading="lazy">
+                <span class="compare-label after">После</span>
+              </figure>
             </div>
           </div>
         </article>
@@ -2360,43 +2491,41 @@
 
         <div class="projects-label">Другие проекты</div>
 
-        <div class="works-grid" id="worksGrid">
-          <a class="work-card real-case portfolio-item reveal" data-category="presentation" href="assets/cybershield-case.webp" target="_blank" rel="noopener">
-            <div class="work-preview">
-              <img src="assets/cybershield-thumb.webp" alt="Презентация CyberShield Zero Day" loading="lazy">
+        <div class="portrait-projects-grid" id="portraitWorksGrid">
+          <a class="portrait-work-card portfolio-item reveal" data-category="presentation" href="assets/cybershield-case.webp" target="_blank" rel="noopener">
+            <div class="portrait-work-media">
+              <img src="assets/cybershield-case.webp" alt="Презентация CyberShield Zero Day" loading="lazy">
               <span class="work-index">↗</span>
-              <div class="work-overlay-title">CyberShield<br>Zero Day</div>
             </div>
             <div class="work-meta"><div><h3>CyberShield: Zero Day</h3><p>Конкурсная презентация веб‑симулятора оператора SOC.</p></div><span class="tag">IT / Cyber</span></div>
           </a>
 
-          <a class="work-card real-case portfolio-item reveal" data-category="presentation" href="assets/borjomi-case.webp" target="_blank" rel="noopener">
-            <div class="work-preview">
-              <img src="assets/borjomi-thumb.webp" alt="Аналитическая презентация Borjomi" loading="lazy">
+          <a class="portrait-work-card portfolio-item reveal" data-category="presentation" href="assets/borjomi-case.webp" target="_blank" rel="noopener">
+            <div class="portrait-work-media">
+              <img src="assets/borjomi-case.webp" alt="Аналитическая презентация Borjomi" loading="lazy">
               <span class="work-index">↗</span>
-              <div class="work-overlay-title">Borjomi<br>аналитика продаж</div>
             </div>
             <div class="work-meta"><div><h3>Borjomi — аналитика продаж</h3><p>Data‑storytelling, графики и продуктовый визуал.</p></div><span class="tag">Аналитика</span></div>
           </a>
 
-          <a class="work-card real-case portfolio-item reveal" data-category="presentation" href="assets/it-market-case.webp" target="_blank" rel="noopener">
-            <div class="work-preview">
-              <img src="assets/it-market-thumb.webp" alt="Инфографика рынка IT-вакансий" loading="lazy">
+          <a class="portrait-work-card portfolio-item reveal" data-category="presentation" href="assets/it-market-case.webp" target="_blank" rel="noopener">
+            <div class="portrait-work-media">
+              <img src="assets/it-market-case.webp" alt="Инфографика рынка IT-вакансий" loading="lazy">
               <span class="work-index">↗</span>
-              <div class="work-overlay-title">Рынок IT<br>в цифрах</div>
             </div>
             <div class="work-meta"><div><h3>550 000 IT‑вакансий</h3><p>Инфографика по направлениям, регионам и динамике спроса.</p></div><span class="tag">Инфографика</span></div>
           </a>
 
-          <a class="work-card real-case portfolio-item reveal" data-category="presentation" href="assets/balance-case.webp" target="_blank" rel="noopener">
-            <div class="work-preview">
-              <img src="assets/balance-thumb.webp" alt="Коммерческая презентация Баланс Проект" loading="lazy">
+          <a class="portrait-work-card portfolio-item reveal" data-category="presentation" href="assets/balance-case.webp" target="_blank" rel="noopener">
+            <div class="portrait-work-media">
+              <img src="assets/balance-case.webp" alt="Коммерческая презентация Баланс Проект" loading="lazy">
               <span class="work-index">↗</span>
-              <div class="work-overlay-title">Баланс Проект<br>офисы для бизнеса</div>
             </div>
-            <div class="work-meta"><div><h3>Баланс Проект</h3><p>офисы для бизнеса</p></div><span class="tag">Коммерческая презентация</span></div>
+            <div class="work-meta"><div><h3>Баланс Проект</h3><p>Коммерческая презентация для офисного пространства.</p></div><span class="tag">Коммерческая презентация</span></div>
           </a>
+        </div>
 
+        <div class="works-grid" id="worksGrid" style="margin-top:18px">
           <a class="work-card real-case portfolio-item reveal" data-category="presentation" href="assets/digital-products.webp" target="_blank" rel="noopener">
             <div class="work-preview">
               <img src="assets/digital-products.webp" alt="Презентация digital-продуктов и UX/UI" loading="lazy">
