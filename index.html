@@ -1890,6 +1890,225 @@
     }
 
 
+    /* Featured website case: FRAME AI */
+    .featured-case.frame-case {
+      margin-top: 24px;
+      background:
+        radial-gradient(circle at 12% 14%, rgba(255, 102, 35, .18), transparent 30%),
+        radial-gradient(circle at 88% 50%, rgba(255, 158, 84, .11), transparent 34%),
+        linear-gradient(145deg, rgba(18,17,16,.99), rgba(8,8,9,.99));
+    }
+
+    .featured-case.frame-case::before {
+      background: radial-gradient(circle, rgba(255, 104, 31, .24), transparent 68%);
+    }
+
+    .frame-case .case-eyebrow span {
+      border-color: rgba(255, 120, 55, .42);
+      color: #ff9a5f;
+      background: rgba(255, 108, 38, .09);
+    }
+
+    .frame-case .featured-copy h3 span {
+      background: linear-gradient(120deg, #ffffff 0%, #ffb078 48%, #ff652e 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .frame-case .site-preview-shell {
+      background: #f2eee5;
+    }
+
+    .frame-case .site-browser {
+      background: #f4f0e8;
+    }
+
+    .frame-case .site-browser-bar {
+      background: rgba(248,245,238,.96);
+    }
+
+    .frame-case .site-preview-link {
+      color: #111;
+      border-color: rgba(17,17,17,.10);
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 12px 30px rgba(30,20,10,.14);
+    }
+
+    .frame-case .site-preview-link:hover {
+      color: #fff;
+      background: #ff642f;
+    }
+
+    .frame-preview-fallback {
+      place-items: stretch;
+      padding: 56px 46px 42px;
+      overflow: hidden;
+      color: #111;
+      text-align: left;
+      background:
+        radial-gradient(circle at 82% 22%, rgba(255, 101, 46, .18), transparent 24%),
+        linear-gradient(rgba(20,18,16,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20,18,16,.045) 1px, transparent 1px),
+        #f4f0e7;
+      background-size: auto, 40px 40px, 40px 40px, auto;
+    }
+
+    .frame-fallback-layout {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100%;
+      gap: 26px;
+    }
+
+    .frame-fallback-brand {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      color: #111;
+      font-family: Manrope, sans-serif;
+    }
+
+    .frame-fallback-brand strong {
+      margin: 0;
+      font: 800 19px/1 Manrope, sans-serif;
+      letter-spacing: -.04em;
+    }
+
+    .frame-fallback-brand span {
+      color: rgba(17,17,17,.46);
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .frame-fallback-copy {
+      align-self: center;
+      max-width: 570px;
+    }
+
+    .frame-fallback-copy h4 {
+      margin: 0;
+      max-width: 520px;
+      font: 800 clamp(38px, 4.3vw, 68px)/.92 Manrope, sans-serif;
+      letter-spacing: -.065em;
+      color: #111;
+    }
+
+    .frame-fallback-copy h4 em {
+      color: #ff642f;
+      font-style: normal;
+    }
+
+    .frame-fallback-copy p {
+      max-width: 420px;
+      margin: 18px 0 0;
+      color: rgba(17,17,17,.56);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .frame-fallback-ui {
+      display: grid;
+      grid-template-columns: .95fr 1.15fr;
+      gap: 12px;
+      min-height: 120px;
+    }
+
+    .frame-fallback-panel,
+    .frame-fallback-result {
+      border: 1px solid rgba(20,18,16,.10);
+      border-radius: 18px;
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 18px 45px rgba(40,26,15,.08);
+    }
+
+    .frame-fallback-panel {
+      padding: 16px;
+    }
+
+    .frame-fallback-input {
+      height: 45px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(17,17,17,.08);
+    }
+
+    .frame-fallback-controls {
+      display: flex;
+      gap: 7px;
+      margin-top: 10px;
+    }
+
+    .frame-fallback-controls i {
+      width: 58px;
+      height: 26px;
+      border-radius: 999px;
+      background: rgba(17,17,17,.07);
+    }
+
+    .frame-fallback-controls i:last-child {
+      margin-left: auto;
+      width: 72px;
+      background: #ff642f;
+    }
+
+    .frame-fallback-result {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      padding: 7px;
+      overflow: hidden;
+    }
+
+    .frame-fallback-result i {
+      min-height: 104px;
+      border-radius: 12px;
+      background:
+        radial-gradient(circle at 62% 28%, rgba(255,255,255,.72), transparent 17%),
+        linear-gradient(145deg, #181818, #ff6a32 82%);
+    }
+
+    .frame-fallback-result i:nth-child(2) {
+      background:
+        radial-gradient(circle at 68% 26%, rgba(255,255,255,.68), transparent 17%),
+        linear-gradient(145deg, #dac9b8, #6d3423 84%);
+    }
+
+    .frame-fallback-result i:nth-child(3) {
+      background:
+        radial-gradient(circle at 38% 34%, rgba(255,255,255,.62), transparent 18%),
+        linear-gradient(145deg, #ddd8cd, #24231f 86%);
+    }
+
+    html[data-theme="light"] .featured-case.frame-case {
+      border-color: rgba(40,31,28,.10);
+      background:
+        radial-gradient(circle at 12% 14%, rgba(255, 103, 38, .10), transparent 30%),
+        linear-gradient(145deg, rgba(255,255,255,.97), rgba(247,243,238,.98));
+      box-shadow: 0 28px 80px rgba(50,38,30,.08), inset 0 1px 0 rgba(255,255,255,.74);
+    }
+
+    html[data-theme="light"] .frame-case .case-eyebrow span {
+      color: #d95120;
+      border-color: rgba(221,87,30,.24);
+      background: rgba(255,100,47,.06);
+    }
+
+    html[data-theme="light"] .frame-case .featured-copy h3 span {
+      background: linear-gradient(120deg, #211c18 0%, #f16a34 55%, #bf3d15 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    @media (max-width: 560px) {
+      .frame-preview-fallback { padding: 42px 24px 30px; }
+      .frame-fallback-ui { grid-template-columns: 1fr; }
+      .frame-fallback-result { display: none; }
+    }
+
+
     /* Theme + language controls */
     .nav-actions {
       justify-self: end;
@@ -2539,6 +2758,38 @@
 </div>
 <a class="site-preview-link" href="https://mira-architecture-interiors-437866303233.europe-west2.run.app" rel="noopener" target="_blank">Смотреть сайт ↗</a>
 </div>
+</article>
+<article class="featured-case site-case frame-case portfolio-item reveal" data-category="site">
+<div class="featured-copy">
+<div class="case-eyebrow"><span>06</span> AI SaaS / веб-дизайн</div>
+<h3>FRAME AI <span>AI Creative Studio</span></h3>
+<p class="case-description">Концепт AI‑платформы для генерации изображений, видео и рекламного контента. Сделал светлую editorial‑подачу, крупную типографику и продуктовый интерфейс, чтобы кейс ощущался как реальный SaaS, а не типичный «AI‑лендинг».</p>
+<div class="case-points">
+<div class="case-point"><i>✓</i><span>Выстроил путь от идеи и референсов до генерации, выбора результата и экспорта</span></div>
+<div class="case-point"><i>✓</i><span>Показал image/video generation, character consistency, проекты и библиотеку ассетов</span></div>
+<div class="case-point"><i>✓</i><span>Собрал отдельный визуальный язык: молочный фон, чёрная типографика и electric orange</span></div>
+</div>
+<div class="case-actions">
+<a href="https://frame-ai-ai-creative-studio.ai.studio" rel="noopener" target="_blank">Открыть живой сайт ↗</a>
+</div>
+</div>
+<div class="case-visual site-preview-shell">
+<div aria-label="Превью сайта FRAME AI" class="site-browser">
+<div aria-hidden="true" class="site-browser-bar">
+<i></i><i></i><i></i>
+<span class="site-browser-url">frame ai — ai creative studio</span>
+</div>
+<div aria-hidden="true" class="site-preview-fallback frame-preview-fallback">
+<div class="frame-fallback-layout">
+<div class="frame-fallback-brand"><strong>FRAME AI</strong><span>AI Creative Studio</span></div>
+<div class="frame-fallback-copy"><h4>Create content <em>at the speed of an idea.</em></h4><p>Images, video and campaigns in one creative workspace.</p></div>
+<div class="frame-fallback-ui"><div class="frame-fallback-panel"><div class="frame-fallback-input"></div><div class="frame-fallback-controls"><i></i><i></i><i></i></div></div><div class="frame-fallback-result"><i></i><i></i><i></i></div></div>
+</div>
+</div>
+<iframe loading="lazy" referrerpolicy="no-referrer" src="https://frame-ai-ai-creative-studio.ai.studio" title="FRAME AI — live preview"></iframe>
+</div>
+<a class="site-preview-link" href="https://frame-ai-ai-creative-studio.ai.studio" rel="noopener" target="_blank">Смотреть сайт ↗</a>
+</div>
 </article><div class="portfolio-more reveal">
 <a class="btn btn-primary" href="#contacts">Обсудить проект
             <svg class="arrow" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></svg>
@@ -2614,8 +2865,8 @@
   <script>
 
     // Language and theme preferences
-    const translations = {"Dinar — дизайн и разработка": "Dinar — Design & Development", "Обо мне": "About", "Услуги": "Services", "Портфолио": "Portfolio", "Этапы работы": "Process", "Контакты": "Contact", "Связаться со мной": "Contact me", "Дизайн. Код. Идея.": "Design. Code. Ideas.", "Создаю дизайн,": "I create design", "который": "that", "работает на вас": "works for you", "Презентации, сайты, карточки товара и AI‑фотосессии, которые привлекают внимание, усиливают доверие и помогают продавать.": "Presentations, websites, product cards and AI photo shoots that attract attention, build trust and help sell.", "Мои работы": "View work", "Обсудить проект": "Discuss a project", "Более": "Over", "выполненных проектов": "completed projects", "Работы": "Work", "Визуальные решения": "Visual solutions", "Презентации": "Presentations", "для бизнеса": "for business", "Сильная структура, продуманная композиция и визуальный стиль под задачу.": "Strong structure, thoughtful composition and a visual style tailored to the task.", "Смотреть кейс": "View case", "года опыта": "years of experience", "Чем я могу быть полезен": "How I can help", "Сильные презентации для выступлений, питчей, защиты проектов и бизнеса.": "High-impact presentations for talks, pitches, project defenses and business.", "Подробнее": "Learn more", "Сайты": "Websites", "Современные адаптивные сайты под ключ: от прототипа и дизайна до публикации.": "Modern responsive websites end to end: from prototype and design to launch.", "Карточки товара": "Product cards", "Продающая инфографика для маркетплейсов, которая выделяет товар и повышает конверсию.": "Conversion-focused marketplace visuals that make products stand out and sell better.", "AI‑фотосессии": "AI photo shoots", "Реалистичные AI‑фото для личного бренда, контента, рекламы и социальных сетей.": "Realistic AI photography for personal brands, content, advertising and social media.", "Кейсы и проекты": "Cases & projects", "Все": "All", "Фото / AI": "Photo / AI", "Обработка фото / контент": "Photo editing / content", "Платье": "Dress", "без выкройки": "without a pattern", "Из простого вертикального фото собрал цепляющую обложку для швейного блога: усилил визуальную иерархию, сделал текст читаемым, добавил декоративные элементы и превратил обычный кадр в эстетичный контент для соцсетей.": "I turned a simple vertical photo into an engaging cover for a sewing blog: strengthened the visual hierarchy, improved readability, added decorative details and transformed an ordinary shot into polished social content.", "Усилил композицию и аккуратно распределил смысловые акценты": "Strengthened the composition and distributed visual emphasis clearly", "Добавил стильную типографику и атмосферные декоративные детали": "Added refined typography and atmospheric decorative details", "Собрал обложку, которая выглядит как готовый блогерский контент": "Created a cover that feels ready for a polished creator feed", "Открыть «до» ↗": "Open before ↗", "Открыть «после» ↗": "Open after ↗", "До": "Before", "После": "After", "Потяни ползунок, чтобы сравнить": "Drag to compare", "AI-визуализация: до и после": "AI visualization: before & after", "AI-визуализация экстерьера": "AI exterior visualization", "Пустой участок": "Empty lot", "→ готовый ландшафт": "→ finished landscape", "Из исходного кадра с незавершённым участком сделал полноценную визуализацию благоустройства: сохранил архитектуру дома и ракурс, добавил озеленение, дорожки и посадки с естественным светом и тенями.": "Starting from an unfinished lot, I created a complete landscaping visualization: preserved the house architecture and camera angle, then added greenery, paths and planting with natural light and shadows.", "Сохранил геометрию дома, перспективу и исходную композицию": "Preserved the house geometry, perspective and original composition", "Добавил газон, деревья, кустарники, цветники и дорожки": "Added lawn, trees, shrubs, flower beds and paths", "Свёл растения с окружением по свету, масштабу и теням": "Matched vegetation to the scene in lighting, scale and shadows", "AI-визуализация интерьера": "AI interior visualization", "Без отделки": "Bare shell", "→ готовый интерьер": "→ finished interior", "На основе пустой бетонной квартиры собрал фотореалистичную концепцию гостиной. Сохранил исходную геометрию помещения и вид из окна, а пространство превратил в законченный интерьер с мебелью, отделкой и светом.": "Using an empty concrete apartment as the base, I created a photorealistic living-room concept. I preserved the original geometry and window view, then developed the space into a finished interior with furniture, materials and lighting.", "Сохранил пропорции комнаты, окно, перспективу и точку съёмки": "Preserved room proportions, window, perspective and camera position", "Добавил отделку, мебель, текстиль и встроенное освещение": "Added finishes, furniture, textiles and integrated lighting", "Собрал спокойный современный интерьер с реалистичными материалами": "Built a calm contemporary interior with realistic materials", "Редизайн презентаций: до и после": "Presentation redesign: before & after", "Редизайн презентации": "Presentation redesign", "Как перестать": "How to stop", "убивать растения": "killing plants", "Исходная презентация была перегружена текстом, таблицами и случайной композицией. Я пересобрал материал в единую визуальную систему, сохранив содержание и усилив понятность каждого слайда.": "The original presentation was overloaded with text, tables and inconsistent composition. I rebuilt it into a cohesive visual system while preserving the content and making every slide easier to understand.", "Выстроил иерархию и сократил визуальный шум": "Built a clear hierarchy and reduced visual noise", "Переработал таблицу, график и чек‑лист": "Redesigned the table, chart and checklist", "Собрал цельный стиль вокруг бренда Plantpot": "Built a cohesive visual language around the Plantpot brand", "Сайты / веб-разработка": "Websites / development", "Сайт для зарубежного заказчика": "Website for an international client", "Премиальный сайт-визитка архитектурной студии: собрал editorial-подачу с крупной типографикой, проектными блоками и спокойной анимацией, а затем связал сайт с рабочими инструментами заказчика.": "A premium portfolio website for an architecture studio: I created an editorial layout with oversized typography, project-led sections and restrained animation, then connected it to the client's operational tools.", "Разработал адаптивный интерфейс и визуальную систему под международную аудиторию": "Designed a responsive interface and visual system for an international audience", "Подключил CRM, Gmail и Google Таблицы для обработки заявок без ручного переноса данных": "Integrated CRM, Gmail and Google Sheets so inquiries flow without manual data transfer", "Подготовил сайт к работе с зарубежными лидами и дальнейшему масштабированию контента": "Prepared the website for international leads and future content scaling", "Открыть живой сайт ↗": "Open live website ↗", "По просьбе заказчика фотографии, имена и контактные данные в публичной версии проекта изменены. Функциональная логика и реализованные интеграции сохранены.": "At the client's request, photos, names and contact details were changed in the public version. The functional logic and implemented integrations remain unchanged.", "Смотреть сайт ↗": "View website ↗", "Другие проекты": "More projects", "Конкурсная презентация веб‑симулятора оператора SOC.": "Competition deck for a SOC operator web simulator.", "аналитика продаж": "sales analytics", "Borjomi — аналитика продаж": "Borjomi — sales analytics", "Data‑storytelling, графики и продуктовый визуал.": "Data storytelling, charts and product visuals.", "Аналитика": "Analytics", "Рынок IT": "IT market", "в цифрах": "in numbers", "550 000 IT‑вакансий": "550,000 IT vacancies", "Инфографика по направлениям, регионам и динамике спроса.": "Infographics by field, region and demand dynamics.", "Инфографика": "Infographics", "Digital‑продукты": "Digital products", "UX/UI и маркетинг": "UX/UI & marketing", "Продукты, которые работают": "Products that work", "Сайты, приложения, UX/UI и цифровая стратегия.": "Websites, apps, UX/UI and digital strategy.", "Сеть зарядок": "EV charging", "для электромобилей": "infrastructure", "Электрозарядная инфраструктура": "EV charging infrastructure", "Инвестиционная логика, команда, экономика и рост проекта.": "Investment logic, team, economics and growth.", "шоколадный бренд": "chocolate brand", "OAXAKA — продуктовая презентация": "OAXAKA — product presentation", "Преимущества производства, ассортимент и визуальная подача бренда.": "Production advantages, product range and brand presentation.", "Брендинг": "Branding", "рекламное агентство": "advertising agency", "Позиционирование, преимущества, история и финальный CTA.": "Positioning, advantages, company story and final CTA.", "Агентство": "Agency", "Продуктовый сайт и приложение": "Product website and app", "сайт продукта": "product website", "Лендинг локального трекера P2P‑сделок": "Landing page for a local P2P deal tracker", "Ещё один редизайн: до и после": "Another redesign: before & after", "Коммерческая презентация": "Commercial presentation", "Баланс Проект": "Balance Project", "офисы для бизнеса": "offices for business", "Из тяжёлых текстовых слайдов и таблиц собрал коммерческую презентацию с сильным оффером, пакетами услуг, цифрами и контрастной визуальной системой.": "I transformed dense text-heavy slides and tables into a commercial deck with a strong offer, service packages, key figures and a high-contrast visual system.", "Перевёл текст в карточки, сравнения и коммерческие аргументы": "Turned text into cards, comparisons and commercial arguments", "Выстроил сценарий: преимущества → пакеты → результат → контакт": "Built the story: advantages → packages → results → contact", "Создал узнаваемую красно‑чёрную визуальную систему": "Created a distinctive red-and-black visual system", "Как я работаю": "How I work", "Обсуждение": "Discovery", "Разбираю задачу, аудиторию, цели и ограничения проекта.": "I clarify the task, audience, goals and project constraints.", "Концепция": "Concept", "Создаю структуру и визуальное направление под вашу задачу.": "I create the structure and visual direction around your needs.", "Дизайн и разработка": "Design & development", "Воплощаю концепцию в сильный дизайн или функциональный сайт.": "I turn the concept into strong design or a functional website.", "Запуск": "Launch", "Помогаю с публикацией, передачей материалов и поддержкой.": "I help with launch, handoff and ongoing support.", "Я не просто делаю дизайн или сайт. Я помогаю решить вашу задачу и получить понятный, визуально сильный результат.": "I don't just make a design or a website. I help solve the actual business task and deliver a clear, visually strong result.", "Готовы к проекту?": "Ready to start?", "Давайте обсудим": "Let's talk", "Напишите мне — разберём задачу и найдём подходящее решение.": "Send me a message — we'll break down the task and find the right solution.", "Номер": "Phone", "Dinar Design. Все права защищены.": "Dinar Design. All rights reserved.", "Наверх ↑": "Back to top ↑"};
-    const ariaTranslations = {"На главную": "Home", "Основная навигация": "Primary navigation", "Открыть меню": "Open menu", "Закрыть меню": "Close menu", "Декоративный макет ноутбука с портфолио": "Decorative laptop portfolio mockup", "Сравнение фото до и после обработки": "Before and after photo comparison", "Сравнение визуализации участка до и после": "Before and after landscape visualization", "Сравнение визуализации интерьера до и после": "Before and after interior visualization", "Сравнение презентации до и после": "Before and after presentation comparison", "Сравнение презентации Баланс Проект до и после": "Before and after Balance Project presentation comparison", "Фильтр портфолио": "Portfolio filter", "Превью сайта MIRA Architecture & Interiors": "MIRA Architecture & Interiors website preview", "Выбор языка": "Language selection", "Переключить тему": "Toggle theme"};
+    const translations = {"Dinar — дизайн и разработка": "Dinar — Design & Development", "Обо мне": "About", "Услуги": "Services", "Портфолио": "Portfolio", "Этапы работы": "Process", "Контакты": "Contact", "Связаться со мной": "Contact me", "Дизайн. Код. Идея.": "Design. Code. Ideas.", "Создаю дизайн,": "I create design", "который": "that", "работает на вас": "works for you", "Презентации, сайты, карточки товара и AI‑фотосессии, которые привлекают внимание, усиливают доверие и помогают продавать.": "Presentations, websites, product cards and AI photo shoots that attract attention, build trust and help sell.", "Мои работы": "View work", "Обсудить проект": "Discuss a project", "Более": "Over", "выполненных проектов": "completed projects", "Работы": "Work", "Визуальные решения": "Visual solutions", "Презентации": "Presentations", "для бизнеса": "for business", "Сильная структура, продуманная композиция и визуальный стиль под задачу.": "Strong structure, thoughtful composition and a visual style tailored to the task.", "Смотреть кейс": "View case", "года опыта": "years of experience", "Чем я могу быть полезен": "How I can help", "Сильные презентации для выступлений, питчей, защиты проектов и бизнеса.": "High-impact presentations for talks, pitches, project defenses and business.", "Подробнее": "Learn more", "Сайты": "Websites", "Современные адаптивные сайты под ключ: от прототипа и дизайна до публикации.": "Modern responsive websites end to end: from prototype and design to launch.", "Карточки товара": "Product cards", "Продающая инфографика для маркетплейсов, которая выделяет товар и повышает конверсию.": "Conversion-focused marketplace visuals that make products stand out and sell better.", "AI‑фотосессии": "AI photo shoots", "Реалистичные AI‑фото для личного бренда, контента, рекламы и социальных сетей.": "Realistic AI photography for personal brands, content, advertising and social media.", "Кейсы и проекты": "Cases & projects", "Все": "All", "Фото / AI": "Photo / AI", "Обработка фото / контент": "Photo editing / content", "Платье": "Dress", "без выкройки": "without a pattern", "Из простого вертикального фото собрал цепляющую обложку для швейного блога: усилил визуальную иерархию, сделал текст читаемым, добавил декоративные элементы и превратил обычный кадр в эстетичный контент для соцсетей.": "I turned a simple vertical photo into an engaging cover for a sewing blog: strengthened the visual hierarchy, improved readability, added decorative details and transformed an ordinary shot into polished social content.", "Усилил композицию и аккуратно распределил смысловые акценты": "Strengthened the composition and distributed visual emphasis clearly", "Добавил стильную типографику и атмосферные декоративные детали": "Added refined typography and atmospheric decorative details", "Собрал обложку, которая выглядит как готовый блогерский контент": "Created a cover that feels ready for a polished creator feed", "Открыть «до» ↗": "Open before ↗", "Открыть «после» ↗": "Open after ↗", "До": "Before", "После": "After", "Потяни ползунок, чтобы сравнить": "Drag to compare", "AI-визуализация: до и после": "AI visualization: before & after", "AI-визуализация экстерьера": "AI exterior visualization", "Пустой участок": "Empty lot", "→ готовый ландшафт": "→ finished landscape", "Из исходного кадра с незавершённым участком сделал полноценную визуализацию благоустройства: сохранил архитектуру дома и ракурс, добавил озеленение, дорожки и посадки с естественным светом и тенями.": "Starting from an unfinished lot, I created a complete landscaping visualization: preserved the house architecture and camera angle, then added greenery, paths and planting with natural light and shadows.", "Сохранил геометрию дома, перспективу и исходную композицию": "Preserved the house geometry, perspective and original composition", "Добавил газон, деревья, кустарники, цветники и дорожки": "Added lawn, trees, shrubs, flower beds and paths", "Свёл растения с окружением по свету, масштабу и теням": "Matched vegetation to the scene in lighting, scale and shadows", "AI-визуализация интерьера": "AI interior visualization", "Без отделки": "Bare shell", "→ готовый интерьер": "→ finished interior", "На основе пустой бетонной квартиры собрал фотореалистичную концепцию гостиной. Сохранил исходную геометрию помещения и вид из окна, а пространство превратил в законченный интерьер с мебелью, отделкой и светом.": "Using an empty concrete apartment as the base, I created a photorealistic living-room concept. I preserved the original geometry and window view, then developed the space into a finished interior with furniture, materials and lighting.", "Сохранил пропорции комнаты, окно, перспективу и точку съёмки": "Preserved room proportions, window, perspective and camera position", "Добавил отделку, мебель, текстиль и встроенное освещение": "Added finishes, furniture, textiles and integrated lighting", "Собрал спокойный современный интерьер с реалистичными материалами": "Built a calm contemporary interior with realistic materials", "Редизайн презентаций: до и после": "Presentation redesign: before & after", "Редизайн презентации": "Presentation redesign", "Как перестать": "How to stop", "убивать растения": "killing plants", "Исходная презентация была перегружена текстом, таблицами и случайной композицией. Я пересобрал материал в единую визуальную систему, сохранив содержание и усилив понятность каждого слайда.": "The original presentation was overloaded with text, tables and inconsistent composition. I rebuilt it into a cohesive visual system while preserving the content and making every slide easier to understand.", "Выстроил иерархию и сократил визуальный шум": "Built a clear hierarchy and reduced visual noise", "Переработал таблицу, график и чек‑лист": "Redesigned the table, chart and checklist", "Собрал цельный стиль вокруг бренда Plantpot": "Built a cohesive visual language around the Plantpot brand", "Сайты / веб-разработка": "Websites / development", "Сайт для зарубежного заказчика": "Website for an international client", "Премиальный сайт-визитка архитектурной студии: собрал editorial-подачу с крупной типографикой, проектными блоками и спокойной анимацией, а затем связал сайт с рабочими инструментами заказчика.": "A premium portfolio website for an architecture studio: I created an editorial layout with oversized typography, project-led sections and restrained animation, then connected it to the client's operational tools.", "Разработал адаптивный интерфейс и визуальную систему под международную аудиторию": "Designed a responsive interface and visual system for an international audience", "Подключил CRM, Gmail и Google Таблицы для обработки заявок без ручного переноса данных": "Integrated CRM, Gmail and Google Sheets so inquiries flow without manual data transfer", "Подготовил сайт к работе с зарубежными лидами и дальнейшему масштабированию контента": "Prepared the website for international leads and future content scaling", "Открыть живой сайт ↗": "Open live site ↗", "По просьбе заказчика фотографии, имена и контактные данные в публичной версии проекта изменены. Функциональная логика и реализованные интеграции сохранены.": "At the client's request, photos, names and contact details were changed in the public version. The functional logic and implemented integrations remain unchanged.", "Смотреть сайт ↗": "View site ↗", "Другие проекты": "More projects", "Конкурсная презентация веб‑симулятора оператора SOC.": "Competition deck for a SOC operator web simulator.", "аналитика продаж": "sales analytics", "Borjomi — аналитика продаж": "Borjomi — sales analytics", "Data‑storytelling, графики и продуктовый визуал.": "Data storytelling, charts and product visuals.", "Аналитика": "Analytics", "Рынок IT": "IT market", "в цифрах": "in numbers", "550 000 IT‑вакансий": "550,000 IT vacancies", "Инфографика по направлениям, регионам и динамике спроса.": "Infographics by field, region and demand dynamics.", "Инфографика": "Infographics", "Digital‑продукты": "Digital products", "UX/UI и маркетинг": "UX/UI & marketing", "Продукты, которые работают": "Products that work", "Сайты, приложения, UX/UI и цифровая стратегия.": "Websites, apps, UX/UI and digital strategy.", "Сеть зарядок": "EV charging", "для электромобилей": "infrastructure", "Электрозарядная инфраструктура": "EV charging infrastructure", "Инвестиционная логика, команда, экономика и рост проекта.": "Investment logic, team, economics and growth.", "шоколадный бренд": "chocolate brand", "OAXAKA — продуктовая презентация": "OAXAKA — product presentation", "Преимущества производства, ассортимент и визуальная подача бренда.": "Production advantages, product range and brand presentation.", "Брендинг": "Branding", "рекламное агентство": "advertising agency", "Позиционирование, преимущества, история и финальный CTA.": "Positioning, advantages, company story and final CTA.", "Агентство": "Agency", "Продуктовый сайт и приложение": "Product website and app", "сайт продукта": "product website", "Лендинг локального трекера P2P‑сделок": "Landing page for a local P2P deal tracker", "Ещё один редизайн: до и после": "Another redesign: before & after", "Коммерческая презентация": "Commercial presentation", "Баланс Проект": "Balance Project", "офисы для бизнеса": "offices for business", "Из тяжёлых текстовых слайдов и таблиц собрал коммерческую презентацию с сильным оффером, пакетами услуг, цифрами и контрастной визуальной системой.": "I transformed dense text-heavy slides and tables into a commercial deck with a strong offer, service packages, key figures and a high-contrast visual system.", "Перевёл текст в карточки, сравнения и коммерческие аргументы": "Turned text into cards, comparisons and commercial arguments", "Выстроил сценарий: преимущества → пакеты → результат → контакт": "Built the story: advantages → packages → results → contact", "Создал узнаваемую красно‑чёрную визуальную систему": "Created a distinctive red-and-black visual system", "Как я работаю": "How I work", "Обсуждение": "Discovery", "Разбираю задачу, аудиторию, цели и ограничения проекта.": "I clarify the task, audience, goals and project constraints.", "Концепция": "Concept", "Создаю структуру и визуальное направление под вашу задачу.": "I create the structure and visual direction around your needs.", "Дизайн и разработка": "Design & development", "Воплощаю концепцию в сильный дизайн или функциональный сайт.": "I turn the concept into strong design or a functional website.", "Запуск": "Launch", "Помогаю с публикацией, передачей материалов и поддержкой.": "I help with launch, handoff and ongoing support.", "Я не просто делаю дизайн или сайт. Я помогаю решить вашу задачу и получить понятный, визуально сильный результат.": "I don't just make a design or a website. I help solve the actual business task and deliver a clear, visually strong result.", "Готовы к проекту?": "Ready to start?", "Давайте обсудим": "Let's talk", "Напишите мне — разберём задачу и найдём подходящее решение.": "Send me a message — we'll break down the task and find the right solution.", "Номер": "Phone", "Dinar Design. Все права защищены.": "Dinar Design. All rights reserved.", "Наверх ↑": "Back to top ↑", "AI SaaS / веб-дизайн": "AI SaaS / web design", "Концепт AI‑платформы для генерации изображений, видео и рекламного контента. Сделал светлую editorial‑подачу, крупную типографику и продуктовый интерфейс, чтобы кейс ощущался как реальный SaaS, а не типичный «AI‑лендинг».": "Concept for an AI platform for generating images, video and campaign content. I used a light editorial direction, large typography and a product-led interface so the case feels like a real SaaS product rather than a typical “AI landing page”.", "Выстроил путь от идеи и референсов до генерации, выбора результата и экспорта": "Designed the flow from idea and references to generation, selection and export", "Показал image/video generation, character consistency, проекты и библиотеку ассетов": "Showcased image/video generation, character consistency, projects and an asset library", "Собрал отдельный визуальный язык: молочный фон, чёрная типографика и electric orange": "Built a distinct visual language: warm off-white, black typography and electric orange"};
+    const ariaTranslations = {"На главную": "Home", "Основная навигация": "Primary navigation", "Открыть меню": "Open menu", "Закрыть меню": "Close menu", "Декоративный макет ноутбука с портфолио": "Decorative laptop portfolio mockup", "Сравнение фото до и после обработки": "Before and after photo comparison", "Сравнение визуализации участка до и после": "Before and after landscape visualization", "Сравнение визуализации интерьера до и после": "Before and after interior visualization", "Сравнение презентации до и после": "Before and after presentation comparison", "Сравнение презентации Баланс Проект до и после": "Before and after Balance Project presentation comparison", "Фильтр портфолио": "Portfolio filter", "Превью сайта MIRA Architecture & Interiors": "MIRA Architecture & Interiors website preview", "Выбор языка": "Language selection", "Переключить тему": "Toggle theme", "Превью сайта FRAME AI": "FRAME AI website preview"};
     const pageMeta = {
       ru: {
         title: 'Dinar — дизайн и разработка',
